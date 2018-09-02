@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    MiuiCamera
+
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
@@ -49,3 +53,5 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/MiuiCamera-vendor.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/sagit.mk)
