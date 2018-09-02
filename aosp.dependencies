@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "litakasumi/android_device_xiaomi_msm8998-common",
+    "target_path": "device/xiaomi/msm8998-common"
+    "branch": "9.x"
+  },
+  {
+    "repository": "LineageOS/android_packages_apps_FlipFlap",
+    "target_path": "packages/apps/FlipFlap"
+    "branch": "lineage-16.0"
+   }
+]
